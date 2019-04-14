@@ -22,9 +22,8 @@ module.exports = function check(str, bracketsConfig) {
     }
   }
 
-  stackBrackets = new Stack();
+  let stackBrackets = new Stack();
   let brackets = str.split('');
-  debugger;
   for(let i = 0; i < brackets.length; i++) {
     for(let j = 0; j < bracketsConfig.length; j++) {
       if (brackets[i] == bracketsConfig[j][0]) {
